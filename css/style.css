@@ -17,6 +17,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--color-primary-text);
+    font-size: 14px;
+    letter-spacing: 0.03em;
     background-color: var(--color-white);
 }
 
@@ -121,6 +123,9 @@ body {
 .header-link:focus,
 .header-contacts a:hover,
 .header-contacts a:focus {
+    color: var(--color-accent);
+}
+.header-list .link.current {
     color: var(--color-accent);
 }
 
