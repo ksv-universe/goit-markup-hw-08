@@ -10,6 +10,9 @@
     --color-transparent-text: rgba(255, 255, 255, 0.6);
     --color-bg-dark: #2f303a;
     --color-bg-light: #f5f4fa;
+    --color-hr: #ececec;
+    --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* Global */
@@ -24,6 +27,17 @@ body {
 
 /* Reset */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin-top: 0;
+margin-bottom: 0;
+}
+
 .btn-reset {
     font-family: inherit;
     border: none;
@@ -31,10 +45,12 @@ body {
 }
 
 .list-reset {
+    
     padding: 0;
     margin: 0;
     list-style: none;
 }
+
 
 /*Utils*/
 
@@ -49,6 +65,20 @@ display: flex;
 align-items: center;    
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.section {
+    padding: 94px 0;
+}
 
 /* Button */
 
@@ -72,12 +102,15 @@ align-items: center;
 }
 
 .filter-btn {
+    display: inline-block;
+    padding: 6px 22px;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26 / 16);
     letter-spacing: 0.03em;
     color: var(--color-secondary-text);
     background-color: var(--color-bg-light);
+    border-radius: 4px;
 }
 
 .filter-btn:hover,
@@ -113,9 +146,17 @@ margin-left: 93px;
     color: var(--color-accent);
 }
 
+.header-list {
+display: flex;
+flex-wrap: wrap;
+column-gap: 50px;
+width: 600px;
+}
+
 /* Title */
 
 .title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: calc(42 / 36);
     text-align: center;
@@ -123,7 +164,21 @@ margin-left: 93px;
     color: var(--color-secondary-text);
 }
 
+/* Filter */
+
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
 /* Header */
+
+.header{
+padding: 24px 0;
+border-bottom: 1px solid var(--color-hr);    
+}
 
 .header-link,
 .header-contacts {
@@ -136,6 +191,17 @@ margin-left: 93px;
 .header-link {
     color: var(--color-secondary-text);
     text-decoration: none;
+}
+.header-contacts {
+    display: flex;
+    column-gap: 50px;
+    margin-left: auto;
+}
+.header-list {
+display: flex;    
+flex-wrap: wrap;
+column-gap: 50px;
+max-width: 600px;
 }
 
 .header-mail,
@@ -177,6 +243,7 @@ margin-left: 93px;
 /* Features */
 
 .features-title {
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
@@ -190,13 +257,42 @@ margin-left: 93px;
     letter-spacing: 0.03em;
 }
 
+.features-list {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;    
+}
+
+.features-item {
+max-width: 270px;
+}
+
+/* About */
+
+.about {
+padding-top: 3px;    
+}
+
+.about-list {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;    
+}
+
+.about-img {
+display: block;
+max-width: 100%;
+}
+
 /* Command */
 
 .command {
+
     background-color: var(--color-bg-light);
 }
 
 .command-title {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
@@ -212,6 +308,26 @@ margin-left: 93px;
     letter-spacing: 0.03em;
 }
 
+.command-list {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;    
+}
+
+.command-img {
+display: block;
+max-width: 100%;
+}
+.command-content {
+padding: 30px 15px;                 
+}
+.command-item {
+background-color: var(--color-white);
+box-shadow: var(--card-shadow);
+border-radius: 0 0 4px 4px;
+}
+
+
 /* Portfolio */
 
 .portfolio-link {
@@ -219,7 +335,17 @@ margin-left: 93px;
     color: inherit;
 }
 
+.portfolio-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 29px;
+        margin-top: 50px;
+    }
+
+
 .portfolio-title {
+    margin-bottom: 4px  ;
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
@@ -232,18 +358,36 @@ margin-left: 93px;
     letter-spacing: 0.03em;
 }
 
+.portfolio-img {
+    display: block;
+    max-width: 100%;
+}
+
+.portfolio-content {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: none;
+}
+
 /* Footer */
 
 .footer {
+    padding: 60px 0;
     background-color: var(--color-bg-dark);
 }
 
 .footer-contacts {
+    margin-top: 20px;
     font-size: 14px;
     font-style: normal;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
 }
+
+.footer-item {
+margin-bottom: 9px;    
+}
+
 
 .footer-address {
     color: var(--color-white);

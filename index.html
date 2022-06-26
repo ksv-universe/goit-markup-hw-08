@@ -8,7 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+        />    
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -45,9 +49,9 @@
         </div>
     </section>
 
-<section class="features">
+<section class="features section">
     <div class="container">
-    <h2 class="title">Профессиональные качества</h2> 
+    <h2 class="visually-hidden">Профессиональные качества</h2> 
     <ul class="features-list list-reset">
 <li class="features-item">
      <h3 class="features-title">Внимание к деталям</h3>
@@ -77,7 +81,8 @@
 </div>
 </section>
 
-<section class="about">
+<section class="about section">
+    <div class="container">
     <h2 class="title">Чем мы занимаемся</h2>
     <ul class="about-list list-reset">
         <li class="about-item">
@@ -105,55 +110,74 @@
         />
 </li>
 </ul>
+</div>
 </section>
 
-<section class="command">
+<section class="command section">
+    <div class="container">
 <h2 class="title">Наша команда</h2>
 <ul class="command-list list-reset">
     <li class="command-item">
+    <div class="command-box">
         <img 
             src="./images/main/our-command-01.jpg" 
             alt="Product Designer Игорь Демьяненко"
             width="270"
             hight="260"
         /> 
+        </div>
+        <div class="command-content">
     <h3 class="command-title">Игорь Демьяненко</h3>
     <p class="command-descr" lang="en">Product Designer</p>
     </li>
     <li class="command-item">
+    <div class="command-box">
         <img 
         src="./images/main/our-command-02.jpg" 
         alt="Frontend Developer Ольга Репина"
         width="270"
         hight="260"
         />
+    </div>
+    <div class="command-content">
         <h3 class="command-title">Ольга Репина</h3>
         <p class="command-descr" lang="en">Frontend Developer</p>
+    </div>
     </li>
     <li class="command-item">
+    <div class="command-box">
         <img 
         src="./images/main/our-command-03.jpg" 
         alt="Marketing Николай Тарасов"
         width="270"
         hight="260"
         />
+    </div>
+    <div class="command-content">
         <h3 class="command-title">Николай Тарасов</h3>
         <p class="command-descr" lang="en">Marketing</p>
+    </div>
     </li>
     <li class="command-item">
+    <div class="command-box">
         <img 
         src="./images/main/our-command-04.jpg" 
         alt="UI Designer Михаил Ермаков"
         width="270"
         hight="260"
         />
+    </div>
+    <div class="command-content">
         <h3 class="command-title">Михаил Ермаков</h3>
         <p class="command-descr" lang="en">UI Designer</p>
+    </div>
     </li>
 </ul>
+</div>
 </section>
 
 <footer class="footer">
+    <div class="container"> 
     <a class="logo logo-footer" href="#"><span class="logo-text">Web</span>Studio</a>
 
     <address class="footer-contacts">
@@ -170,6 +194,7 @@
             </li>
         </ul>
     </address>
+    </div>
 </footer>
 </body>
 
