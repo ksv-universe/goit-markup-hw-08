@@ -386,7 +386,7 @@ border-radius: 0 0 4px 4px;
     letter-spacing: 0.03em;
 }
 
-.footer-item:not(:last-child){
+.footer-item:not(:last-child) {
 margin-bottom: 9px;    
 }
 
