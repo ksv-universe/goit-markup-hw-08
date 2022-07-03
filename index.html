@@ -19,7 +19,7 @@
     
 <body>
    <header class="header">
-    <div class="header-inner container">
+        <div class="header-inner container">
     <a class="logo logo-header" href="#"><span class="logo-text">Web</span>Studio</a>
     <nav class="header-nav">
         <ul class="header-list list-reset">
@@ -35,11 +35,18 @@
         </ul> 
     </nav>
      <div class="header-contacts">
-        <a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="header-number" href="tel:+380961111111">+38 096 111 11 11</a>
-     </div>
+        <a class="header-mail" href="mailto:info@devstudio.com" aria-label="Почта">
+        <svg class="header-icon">
+        <use href="./images/icons/sprite.svg#icon-envelope"></use>  
+        </svg>
+        info@devstudio.com</a>
+        <a class="header-number" href="tel:+380961111111" aria-label="Номер телефона">
+        <svg class="header-icon">
+        <use href="./images/icons/sprite.svg#icon-smartphone"></use></svg>
+        +38 096 111 11 11</a>
     </div>
-</header>
+        </div>
+    </header>
 <!--Main content -->
 <main>
     <section class="hero">
@@ -54,24 +61,44 @@
     <h2 class="visually-hidden">Профессиональные качества</h2> 
     <ul class="features-list list-reset">
 <li class="features-item">
+    <div class="features-box">
+        <svg class="features-icon">
+        <use href="./images/icons/sprite.svg#icon-antenna"></use>
+            </svg>
+        </div>
      <h3 class="features-title">Внимание к деталям</h3>
             <p class="features-descr">
               Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
           <li class="features-item">
-            <h3 class="features-title">Внимание к деталям</h3>
+            <div class="features-box"> 
+            <svg class="features-icon">
+            <use href="./images/icons/sprite.svg#icon-clock"></use>
+            </svg>
+        </div>
+            <h3 class="features-title">Пунктуальность</h3>
             <p class="features-descr">
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
 <li class="features-item">
+    <div class="features-box">
+        <svg class="features-icon">
+            <use href="./images/icons/sprite.svg#icon-chart"></use>
+        </svg>
+    </div>
     <h3 class="features-title">Планирование</h3>
     <p class="features-descr">
         Равным образом консультация с широким активом в значительной степени обуславливает.
     </p>
 </li>
 <li class="features-item">
+    <div class="features-box">
+        <svg class="features-icon">
+            <use href="./images/icons/sprite.svg#icon-astronaut"></use>
+        </svg>
+    </div>
     <h3 class="features-title">Современные технологии</h3>
     <p class="features-descr">
         Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -86,7 +113,8 @@
     <h2 class="title">Чем мы занимаемся</h2>
     <ul class="about-list list-reset">
         <li class="about-item">
-    <img 
+    <img
+        class="about-img" 
         src="./images/main/feature-01.jpg" 
         alt="Десктопные приложения" 
         width="370" 
@@ -94,7 +122,8 @@
         />
 </li>
 <li class="about-item">
-    <img 
+    <img
+        class="about-img" 
         src="./images/main/feature-02.jpg" 
         alt="Мобильные приложения" 
         width="370" 
@@ -102,7 +131,8 @@
         />
 </li>
 <li class="about-item">
-    <img 
+    <img
+        class="about-img" 
         src="./images/main/feature-01.jpg" 
         alt="Дизайнерские решение" 
         width="370" 
@@ -121,15 +151,47 @@
     <div class="command-box">
         <img 
         class="command-img"
-            src="./images/main/our-command-01.jpg" 
-            alt="Product Designer Игорь Демьяненко"
-            width="270"
-            hight="260"
+        src="./images/main/our-command-01.jpg" 
+        alt="Product Designer Игорь Демьяненко"
+        width="270"
+        hight="260"
         /> 
         </div>
         <div class="command-content">
     <h3 class="command-title">Игорь Демьяненко</h3>
     <p class="command-descr" lang="en">Product Designer</p>
+    <ul class="command-social-list list-reset">
+        <li class="command-social-item">
+        <a class="command-social-link" href="#" aria-label="Инстаграм Игоря Демьяненко">
+        <svg class="command-social-icon">
+        <use href="./images/icons/sprite.svg#icon-instagram"></use>
+         </svg>
+         </a>
+        </li>
+        <li class="command-social-item">
+        <a class="command-social-link" href="#" aria-label="Твиттер Игоря Демьяненко ">
+        <svg class="command-social-icon">
+        <use href="./images/icons/sprite.svg#icon-twitter"></use>
+        </svg>
+        </a>
+        </li>
+        <li class="command-social-item">
+        <a class="command-social-link" href="#" aria-label="Фейсбук Игоря Демьяненко">
+        <svg class="command-social-icon">
+        <use href="./images/icons/sprite.svg#icon-facebook"></use>
+        </svg>
+        </a>
+        </li>
+        <li class="command-social-item">
+        <a class="command-social-link" href="#" aria-label="Линкедин Игоря Демьяненко">
+        <svg class="command-social-icon">
+        <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+        </svg>
+        </a>
+        </li>
+    </ul>
+    </div>
+    </li>
     </li>
     <li class="command-item">
     <div class="command-box">
@@ -144,6 +206,35 @@
     <div class="command-content">
         <h3 class="command-title">Ольга Репина</h3>
         <p class="command-descr" lang="en">Frontend Developer</p>
+        <ul class="command-social-list list-reset">
+        <li class="command-social-item">
+        <a class="command-social-link" href="#" aria-label="Инстаграм Ольгы Репиной">
+        <svg class="command-social-icon">
+        <use href="./images/icons/sprite.svg#icon-instagram"></use>
+         </svg>
+         </a>
+        </li>
+        <li class="command-social-item">
+        <a class="command-social-link" href="#" aria-label="Твиттер Ольгы Репиной ">
+        <svg class="command-social-icon">
+        <use href="./images/icons/sprite.svg#icon-twitter"></use>
+        </svg>
+        </a>
+        </li>
+        <li class="command-social-item">
+        <a class="command-social-link" href="#" aria-label="Фейсбук Ольгы Репиной">
+        <svg class="command-social-icon">
+        <use href="./images/icons/sprite.svg#icon-facebook"></use>
+        </svg>
+        </a>
+        </li>
+        <li class="command-social-item">
+        <a class="command-social-link" href="#" aria-label="Линкедин Ольгы Репиной">
+        <svg class="command-social-icon">
+        <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+        </svg>
+        </a>
+        </li>
     </div>
     </li>
     <li class="command-item">
@@ -159,6 +250,36 @@
     <div class="command-content">
         <h3 class="command-title">Николай Тарасов</h3>
         <p class="command-descr" lang="en">Marketing</p>
+        <ul class="command-social-list list-reset">
+        <li class="command-social-item">
+        <a class="command-social-link" href="#" aria-label="Инстаграм Николая Тарасова">
+        <svg class="command-social-icon">
+        <use href="./images/icons/sprite.svg#icon-instagram"></use>
+         </svg>
+         </a>
+        </li>
+        <li class="command-social-item">
+        <a class="command-social-link" href="#" aria-label="Твиттер Николая Тарасова">
+        <svg class="command-social-icon">
+        <use href="./images/icons/sprite.svg#icon-twitter"></use>
+        </svg>
+        </a>
+        </li>
+        <li class="command-social-item">
+        <a class="command-social-link" href="#" aria-label="Фейсбук Николая Тарасова">
+        <svg class="command-social-icon">
+        <use href="./images/icons/sprite.svg#icon-facebook"></use>
+        </svg>
+        </a>
+        </li>
+        <li class="command-social-item">
+        <a class="command-social-link" href="#" aria-label="Линкедин Николая Тарасова">
+        <svg class="command-social-icon">
+        <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+        </svg>
+        </a>
+        </li>
+        </ul>
     </div>
     </li>
     <li class="command-item">
@@ -174,8 +295,37 @@
     <div class="command-content">
         <h3 class="command-title">Михаил Ермаков</h3>
         <p class="command-descr" lang="en">UI Designer</p>
-    </div>
-    </li>
+        <ul class="command-social-list list-reset">
+        <li class="command-social-item">
+        <a class="command-social-link" href="#" aria-label="Инстаграм Михаила Ермакова">
+        <svg class="command-social-icon">
+        <use href="./images/icons/sprite.svg#icon-instagram"></use>
+         </svg>
+         </a>
+        </li>
+        <li class="command-social-item">
+        <a class="command-social-link" href="#" aria-label="Твиттер Михаила Ермакова">
+        <svg class="command-social-icon">
+        <use href="./images/icons/sprite.svg#icon-twitter"></use>
+        </svg>
+        </a>
+        </li>
+        <li class="command-social-item">
+        <a class="command-social-link" href="#" aria-label="Фейсбук Михаила Ермакова">
+        <svg class="command-social-icon">
+        <use href="./images/icons/sprite.svg#icon-facebook"></use>
+        </svg>
+        </a>
+        </li>
+        <li class="command-social-item">
+        <a class="command-social-link" href="#" aria-label="Линкедин Михаила Ермакова">
+        <svg class="command-social-icon">
+        <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+        </svg>
+        </a>
+        </li>
+        </div>
+        </li>
 </ul>
 </div>
 </section>
