@@ -38,8 +38,16 @@
                 </ul>
             </nav>
             <div class="header-contacts">
-                <a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                <a class="header-number" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="header-mail" href="mailto:info@devstudio.com" aria-label="Почта">
+                    <svg class="header-icon">
+                        <use href="./images/icons/sprite.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com</a>
+                <a class="header-number" href="tel:+380961111111" aria-label="Номер телефона">
+                    <svg class="header-icon">
+                        <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
             </div>
         </div>
     </header>
@@ -180,27 +188,62 @@
     </main>
 
 <footer class="footer">
-    <div class="container">
-        <a class="logo logo-footer" href="./index.html"><span class="logo-text">Web</span>Studio</a>
+    <div class="container"> 
+    <div class="footer-inner">
+        <div class="footer-info">
+            <a class="logo logo-footer" href="#"><span class="logo-text">Web</span>Studio</a>
 
-        <address class="footer-contacts">
-            <ul class="footer-list list-reset">
+    <address class="footer-contacts">
+        <ul class="footer-list list-reset">
+            <li class="footer-item">
+                <a class="footer-address" href="https://goo.gl/maps/jzjgvNHyo2qF3V4f9" target="_blank"
+                    rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
                 <li class="footer-item">
-                    <a class="footer-address" href="https://goo.gl/maps/jzjgvNHyo2qF3V4f9" target="_blank"
-                        rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                  <a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
                 </li>
-
-                <li class="footer-item">
-                    <a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
-                </li>
-
                 <li class="footer-item">
                     <a class="footer-number" href="tel:+380991111111">+38 099 111 11 11</a>
                 </li>
+                </ul>
+                </address>
+                </div>
+<div class="footer-social">
+            <h3 class="footer-social-title">Присоединяйтесь</h3>
+            <ul class="footer-social-list list-reset">
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="#" aria-label="Наш Инстаграм">
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="#" aria-label="Наш Твиттер">
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="#" aria-label="Наш Фейсбук">
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="#" aria-label="Наш Линкедин">
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
-        </address>
-    </div>
-</footer>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 
 </html>
