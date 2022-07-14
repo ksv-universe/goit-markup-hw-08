@@ -718,3 +718,12 @@ margin-bottom: 9px;
 .footer-social-link:focus {
     background-color: var(--color-accent);
 }
+
+.footer-label {
+font-weight: 700;
+font-size: 14px;
+line-height: calc(16 / 14);
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--color-white);
+}
