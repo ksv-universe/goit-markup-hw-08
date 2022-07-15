@@ -458,14 +458,57 @@
             </svg> 
             </button>
 
+
         </footer>
     <div class="backdrop is-hidden" data-modal> 
         <div class="modal">
-            <button class="modal-close-btn btn-reset" type="button" data-modal-close>
+           <button
+          class="modal-close-btn btn-reset"
+          type="button"
+          aria-label="Закрыть"
+          data-modal-close>
                 <svg class="modal-close-icon">
                     <use href="./images/icons/sprite.svg#icon-close"></use>
                 </svg>
             </button>
+            <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+            <form class="modal-form">
+              <label class="modal-label">
+                Имя
+                <input class="modal-input" type="text" name="user-name" />
+                <svg class="modal-icon">
+                  <use href="./images/icons/icons.svg#icon-modal-name"></use>
+                </svg>
+              </label>
+            
+              <label class="modal-label">
+                Телефон
+                <input class="modal-input" type="tel" name="user-tel" />
+                <svg class="modal-icon">
+                  <use href="./images/icons/icons.svg#icon-modal-phone"></use>
+                </svg>
+              </label>
+            
+              <label class="modal-label">
+                Почта
+                <input class="modal-input" type="email" name="user-email" />
+                <svg class="modal-icon">
+                  <use href="./images/icons/icons.svg#icon-modal-email"></use>
+                </svg>
+              </label>
+            
+              <label class="modal-label">
+                Комментарий
+                <textarea class="modal-textarea" name="user-comment" placeholder="Введите текст" rows="7"></textarea>
+              </label>
+            
+              <label class="modal-check-label">
+                <input class="modal-check-input" type="checkbox" name="user-agree" />
+                Соглашаюсь с рассылкой и принимаю&nbsp;<a class="modal-check-link" href="#">Условия договора</a>
+                <span class="modal-check-box"></span>
+              </label>
+              <button class="modal-btn btn btn-reset" type="submit">Отправить</button>
+            </form>
         </div>
     </div>
 
