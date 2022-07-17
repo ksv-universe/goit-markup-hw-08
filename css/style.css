@@ -186,13 +186,6 @@ column-gap: 50px;
 .header {
 padding: 24px 0;
 border-bottom: 1px solid var(--color-hr);
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-min-height: 80px;
-background-color: var(--color-white);
-z-index: 1;
 }
 
 .header-link,
@@ -294,9 +287,6 @@ max-width: 600px;
     color: var(--color-accent);
 }
 
-.page-header {
-    
-}
 
 /* Hero */
 
@@ -480,13 +470,14 @@ max-width: 600px;
     border: 2px solid var(--color-secondary-text);
     border-radius: 2px;
     cursor: pointer;
-    transition: border var(--transition-time-cubic), background var(--transition-time-cubic);
+    transition: border var(--transition-time-cubic); 
+    background: var(--transition-time-cubic);
 }
 
 .modal-check-input:checked~.modal-check-box {
     border: 2px solid var(--color-accent);
     background-color: var(--color-accent);
-    background-image: url('../images/icons/modal-check.svg');
+    background-image: url('../images/modal/check-modal.svg');
     background-size: contain;
     background-origin: border-box;
 }
