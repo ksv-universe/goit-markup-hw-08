@@ -10,13 +10,7 @@
 
 // Flex
 
-@mixin flex($dir: null,
-    $wrap: null,
-    $justify: null,
-    $align: null,
-    $gap: null,
-    $column-gap: null,
-    $row-gap: null) {
+@mixin flex($dir: null, $wrap: null, $justify: null, $align: null, $gap: null, $column-gap: null,$row-gap: null) {
     display: flex;
     flex-direction: $dir;
     flex-wrap: $wrap;
